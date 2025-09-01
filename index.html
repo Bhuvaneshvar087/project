@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSight AI Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="main-container" id="main-container">
+        <div class="chat-container" id="chat-container">
+            <div class="header">
+                <h1>FinSight AI</h1>
+                <p>Your Intelligent Finance Assistant</p>
+            </div>
+            <div id="chat-window" class="chat-window">
+                <div class="message bot-message" id="initial-message">
+                    <p>Hello! Upload your monthly expense CSV file to generate your financial dashboard.</p>
+                </div>
+            </div>
+            <div class="input-area" id="input-area">
+                <label for="file-input" class="file-label" id="file-label">
+                    <span id="file-name">Choose File</span>
+                </label>
+                <input type="file" id="file-input" accept=".csv">
+                <button id="upload-button">Analyze</button>
+                <div class="progress-area" id="progress-area" style="display: none;">
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" id="progress-bar-fill"></div>
+                    </div>
+                    <span class="progress-text" id="progress-text">Uploading...</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-area-container" id="chart-area-container">
+            <h2>Spending Breakdown</h2>
+            <div class="chart-wrapper">
+                <canvas id="expense-chart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
