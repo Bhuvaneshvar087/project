@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <h1>Personal Finance Assistant</h1>
+        </div>
+        <div id="chat-window" class="chat-window">
+            <div class="message bot-message">
+                <p>Hello! Please upload your monthly expense CSV file to get started.</p>
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="file" id="file-input" accept=".csv">
+            <button id="upload-button">Analyze Expenses</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
