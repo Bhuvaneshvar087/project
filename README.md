@@ -11,7 +11,8 @@ Follow these exact steps to launch the application on your local machine.
   ```bash
   pip install Flask pandas flask-cors google-generativeai
 
-  # Launch Instructions 🚀
+
+# Launch Instructions 🚀
 
 1. Open all the project files in **VS Code**.  
 2. Open the **integrated VS Code terminal**.  
